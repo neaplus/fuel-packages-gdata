@@ -2,8 +2,26 @@
 	"name": "mp-php/fuel-packages-gdata",
 	"type": "fuel-package",
 	"require": {
-		"composer/installers": "*"
+		"composer/installers": "*",
+
+		"google/google-api-php-client": "0.6.*"
 	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "google/google-api-php-client",
+				"version": "0.6.2",
+				"dist": {
+					"url": "http://google-api-php-client.googlecode.com/files/google-api-php-client-0.6.2.tar.gz",
+					"type": "tar"
+				},
+				"autoload": {
+					"classmap": ["src/"]
+				}
+			}
+		}
+	],
 	"extra": {
 		"installer-name": "gdata"
 	},

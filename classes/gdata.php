@@ -18,10 +18,10 @@ class Gdata
 
 	public function __construct($service, $name, $config)
 	{
-		require_once PKGPATH."gdata/vendor/google-api-php-client/src/Google_Client.php";
+		require_once PKGPATH."gdata/vendor/google/google-api-php-client/src/Google_Client.php";
 
 		$service_class = 'Google_'.ucfirst(strtolower($service)).'Service';
-		require_once PKGPATH."gdata/vendor/google-api-php-client/src/contrib/{$service_class}.php";
+		require_once PKGPATH."gdata/vendor/google/google-api-php-client/src/contrib/{$service_class}.php";
 
 		if( ! class_exists($service_class))
 		{

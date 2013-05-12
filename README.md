@@ -8,8 +8,13 @@ https://code.google.com/p/google-api-php-client/
 ## Install
 ### Setup to fuel/packages/gdata
 * Use composer https://packagist.org/packages/mp-php/fuel-packages-gdata
-* git submodule add
+* git submodule
 * Download zip
+
+If you use git submodule or download zip, you must install vendors
+
+	$ cd fuel/packages/gdata
+	$ php composer.phar install
 
 ## Usage
 ### 1: Configuration
